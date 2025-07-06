@@ -1,0 +1,37 @@
+name: berita_dunia
+description: A new Flutter News application.
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  http: ^1.1.0
+  cupertino_icons: ^1.0.2
+  url_launcher: ^6.1.14
+  geolocator: ^14.0.1
+  geocoding: ^4.0.0
+  provider: ^6.0.5
+  google_fonts: ^6.1.0 # Menambahkan google_fonts
+  youtube_player_flutter: ^9.1.1 # Updated to resolve dependency conflict
+  flutter_inappwebview: ^6.0.0-beta.24
+  firebase_core: ^3.13.1
+  firebase_auth: ^5.5.4
+  cloud_firestore: ^5.6.8
+  # firebase_storage: ^12.0.1 # Diganti dengan Supabase Storage
+  supabase_flutter: ^2.3.4 # Supabase untuk storage
+  image_picker: ^1.1.2
+  intl: ^0.19.0 # Or the latest version
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true

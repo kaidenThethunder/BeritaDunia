@@ -1,0 +1,29 @@
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "beritadunia-43555",
+          "appId": "1:355907591920:android:74ec1716312deb85f36c35",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "beritadunia-43555",
+          "configurations": {
+            "android": "1:355907591920:android:74ec1716312deb85f36c35",
+            "ios": "1:355907591920:ios:ccad8eb2b6389006f36c35",
+            "web": "1:355907591920:web:0195f89e5c2f682ff36c35"
+          }
+        }
+      }
+    }
+  },
+  "firestore": {
+    "rules": "firestore.rules"
+  },
+  "storage": {
+    "rules": "storage.rules"
+  }
+}

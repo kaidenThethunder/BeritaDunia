@@ -1,0 +1,17 @@
+rules_version = '2';
+service firebase.storage {
+  match /b/{bucket}/o {
+    // Allow public access to public_images and public_videos folders
+    match /public_images/{allPaths=**} {
+      allow read, write: if true;
+    }
+    match /public_videos/{allPaths=**} {
+      allow read, write: if true;
+    }
+    
+    // Allow authenticated users to read and write other files
+    match /{allPaths=**} {
+      allow read, write: if request.auth != null;
+    }
+  }
+}
